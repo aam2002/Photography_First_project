@@ -1,0 +1,373 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  text-align-last: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+body {
+  font-family: "Abel", sans-serif;
+}
+
+#logo p {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px 0px 0px 10px;
+  font-family: "IM Fell English SC", serif;
+  width: 235px;
+}
+
+#home {
+  display: flex;
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 50px 0px 0px 0px;
+  box-sizing: border-box;
+}
+
+#home::before {
+  content: " ";
+  position: absolute;
+  background:url(ABSTRACT.jpg);
+  top: 0px;
+  
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -2;
+  overflow: auto;
+  height: 100%;
+}
+
+.h-primary-center {
+  text-align: center;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#navbar::before {
+  content: " ";
+  background-color: rgb(53, 53, 53);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#logo {
+  display: flex;
+}
+
+#logo img {
+  height: 69px;
+  filter: invert(100%);
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+#navbar ul li {
+  display: flex;
+  list-style: none;
+}
+
+#navbar ul li a {
+  display: flex;
+  margin: 0px 52px 0px 52px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto Mono", monospace;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+#navbar ul li a:hover {
+  color: rgb(61, 255, 155);
+  box-shadow: 0px 0px 6px 0px rgb(0, 0, 0), 0px 0px 6px 0px rgb(0, 0, 0);
+  text-shadow: 0px 0px 10px rgba(0, 255, 123, 0.855),
+    0px 0px 15px rgb(0 255 123);
+}
+
+#btn {
+  background: rgba(178, 252, 214, 0);
+  color: rgb(0 255 123);
+  padding: 20px 30px;
+  font-size: 19px;
+  margin: 20px;
+  border: rgba(255, 255, 255, 0);
+  transition: all 0.3s;
+  font-weight: bolder;
+}
+
+#btn:hover {
+  text-shadow: 0px 0px 50px rgb(0 255 123);
+  color: rgb(0 255 123);
+}
+
+#mainsample {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.sam {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+
+.image0 {
+  box-sizing: border-box;
+  transition: 0.3s;
+  width: 228px;
+}
+.image0:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 8px 1px rgb(0, 0, 0);
+ 
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  /* opacity: .9; */
+}
+
+.text {
+  word-wrap: break-word;
+  text-align-last: center;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 3px black;
+  transition: 0.3s;
+  position: relative;
+  z-index: 10;
+}
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  padding: 10px 0px 0px 0px;
+  color: rgb(171, 255, 211);
+}
+
+.contact ul li a {
+  text-decoration: none;
+  display: block;
+  margin: auto;
+  transition: 0.2s;
+}
+.contact ul li a:hover {
+  transform: scale(0.92);
+}
+
+.contact ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 10vh;
+  padding: 30px 0px 0px 0px;
+}
+
+.contact ul li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact ul li p {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.contact ul li p:hover {
+  cursor: pointer;
+}
+
+.contact::before {
+  content: " ";
+  background: black;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -2;
+  overflow: auto;
+}
+
+.contact {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#copy{
+justify-content: center;
+align-items: flex-end;
+display: flex;
+margin-top:50px ;
+font-size: .8rem;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+/* font-weight: lighter; */
+text-align: center;
+letter-spacing: 0.09rem;
+text-align-last: center;
+}
+footer{
+  position: relative;
+}
+@media screen and (max-width: 1179px) {
+  #navbar::before {
+    content: " ";
+    background-color: rgb(11, 11, 11);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  #navbar ul li a {
+    display: flex;
+    margin: 0px 20px 0px 20px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: "Roboto Mono", monospace;
+    border-radius: 3px;
+    transition: all 0.3s;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+  }
+
+  footer {
+    position: relative;
+  }
+
+  .contact::before {
+    content: " ";
+    background: rgb(5, 13, 9);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: -3;
+    width: 100%;
+    height: 111%;
+  }
+}
+
+@media screen and (max-width: 717px) {
+  .sam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #home {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #navbar ul li a {
+    margin: 5px;
+    padding: 5px;
+    font-size: medium;
+  }
+
+  footer {
+    position: relative;
+  }
+
+  .contact::before {
+    content: " ";
+    background: rgb(5, 13, 9);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: -3;
+    width: 100%;
+    height: 111%;
+  }
+
+  .image0 {
+    width: 310px;
+  }
+
+  .image {
+    display: flex;
+    flex-direction: column;
+    height: 612px;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+}
